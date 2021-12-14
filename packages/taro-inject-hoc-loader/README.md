@@ -1,11 +1,11 @@
-# inject-hoc-loader
+# taro-inject-hoc-loader
 
 本loder主要是为了给小程序（taro）页面注入高阶组件所写的，众所周知小程序没有公共入口定义全局组件，所以想通过注入高阶组件的形式给页面注入公共代码。（纯react项目应该也能用）
 
 ## 安装
 
 ```bash
-npm install --save-dev inject-hoc-loader
+npm install --save-dev taro-inject-hoc-loader
 ```
 
 ## 使用
@@ -20,7 +20,7 @@ chain.merge({
         test: /\.tsx$/,
         use: [
           {
-            loader: 'inject-hoc-loader',
+            loader: 'taro-inject-hoc-loader',
             options: {
               hoc: [
                 {

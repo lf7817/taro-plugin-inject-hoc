@@ -52,7 +52,7 @@ const config = {
               test: /\.tsx$/,
               use: [
                 {
-                  loader: 'taro-plugin-inject-hoc',
+                  loader: 'taro-inject-hoc-loader',
                   options: {
                     hoc: [
                       {
