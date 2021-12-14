@@ -5,7 +5,7 @@
   "version": "independent",
   "command": {
     "publish": {
-      "ignoreChanges": ["packages/taro-example/"]
+      "ignoreChanges": ["packages/taro-example/**/*.*"]
     }
   }
 }
