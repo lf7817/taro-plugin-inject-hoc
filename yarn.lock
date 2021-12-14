@@ -2499,6 +2499,14 @@
     "@babel/runtime" "^7.11.2"
     "@tarojs/runtime" "3.3.10"
 
+"@tarojs/api@3.3.16":
+  version "3.3.16"
+  resolved "https://registry.yarnpkg.com/@tarojs/api/-/api-3.3.16.tgz#709efb77f0327cae02b8e0d338ff6517276018d2"
+  integrity sha512-FTFuCiBHQDxJKxQYOCopfLZkTFYpAMB0EfcF/XHsdE1zZb4BgMfqFETRJCPW4nuegBSrWEucK/ClXUAGqvJRTw==
+  dependencies:
+    "@babel/runtime" "^7.11.2"
+    "@tarojs/runtime" "3.3.16"
+
 "@tarojs/components@3.3.10":
   version "3.3.10"
   resolved "https://registry.yarnpkg.com/@tarojs/components/-/components-3.3.10.tgz#d7d332349a5ad9187cb78d626b8cbe5199f57a6a"
@@ -2529,6 +2537,31 @@
     "@babel/register" "7.14.5"
     "@babel/runtime" "^7.9.2"
     "@tarojs/taro" "3.3.10"
+    chalk "3.0.0"
+    chokidar "3.3.1"
+    cross-spawn "7.0.3"
+    debug "4.1.1"
+    find-yarn-workspace-root "2.0.0"
+    fs-extra "8.1.0"
+    lodash "4.17.21"
+    resolve "1.15.1"
+    yauzl "2.10.0"
+
+"@tarojs/helper@3.3.16":
+  version "3.3.16"
+  resolved "https://registry.yarnpkg.com/@tarojs/helper/-/helper-3.3.16.tgz#fb5479356d7bdd33157c6a247d6736429ad11366"
+  integrity sha512-T9p+v+1ex02tOlsxis2kmCd14ZmxdymVq5Z2Bu10+KRui0T3Wd19LYsz1UZpiceuh6+C89A7qyny7Hr26IEyIA==
+  dependencies:
+    "@babel/core" "^7.11.1"
+    "@babel/plugin-proposal-class-properties" "7.10.4"
+    "@babel/plugin-proposal-decorators" "7.10.5"
+    "@babel/plugin-proposal-object-rest-spread" "7.14.7"
+    "@babel/plugin-transform-runtime" "7.11.0"
+    "@babel/preset-env" "^7.11.0"
+    "@babel/preset-typescript" "7.12.17"
+    "@babel/register" "7.14.5"
+    "@babel/runtime" "^7.9.2"
+    "@tarojs/taro" "3.3.16"
     chalk "3.0.0"
     chokidar "3.3.1"
     cross-spawn "7.0.3"
@@ -2673,6 +2706,17 @@
     universal-router "^8.3.0"
     url-parse "^1.4.7"
 
+"@tarojs/router@3.3.16":
+  version "3.3.16"
+  resolved "https://registry.yarnpkg.com/@tarojs/router/-/router-3.3.16.tgz#3ea5f6af38f542a44ea0c6712c2124f4a0d176c3"
+  integrity sha512-tlbKS64k9r+ZyYVe/t5aNyQWIm1Au/QcVYjR8dcLNQZHmlSCr34jkmmfdAAOS+348y+yGHyCaqJpab7dvY/qKw==
+  dependencies:
+    "@tarojs/runtime" "3.3.16"
+    history "^5.1.0"
+    query-string "^6.13.8"
+    universal-router "^8.3.0"
+    url-parse "^1.4.7"
+
 "@tarojs/runner-utils@3.3.10":
   version "3.3.10"
   resolved "https://registry.yarnpkg.com/@tarojs/runner-utils/-/runner-utils-3.3.10.tgz#bf9f6a824bf068ea9201f529a8695be248c85c48"
@@ -2691,6 +2735,16 @@
     lodash-es "4.17.15"
     reflect-metadata "^0.1.13"
 
+"@tarojs/runtime@3.3.16":
+  version "3.3.16"
+  resolved "https://registry.yarnpkg.com/@tarojs/runtime/-/runtime-3.3.16.tgz#f9c4e73adcd2d2a3ceb86fc9f559a3cb791c6ac4"
+  integrity sha512-eQHrRNG3VzkZZSyzyBNQ83l8mRupMMwRFH6u83MFOAuqbDctVJ5lq5UmOAlzKVpZz0oJsosc/OreOPxyJ9kTQQ==
+  dependencies:
+    "@tarojs/shared" "3.3.16"
+    inversify "5.1.1"
+    lodash-es "4.17.15"
+    reflect-metadata "^0.1.13"
+
 "@tarojs/service@3.3.10":
   version "3.3.10"
   resolved "https://registry.yarnpkg.com/@tarojs/service/-/service-3.3.10.tgz#3dfd6d06b8d88866b8a652131d5e738015d1b39f"
@@ -2705,10 +2759,29 @@
     resolve "1.15.1"
     tapable "1.1.3"
 
+"@tarojs/service@^3.3.16":
+  version "3.3.16"
+  resolved "https://registry.yarnpkg.com/@tarojs/service/-/service-3.3.16.tgz#0278cd5907fae002afe03702816642a3661b1c2e"
+  integrity sha512-74ULhl0XzQ+ZQ8dT8W/bhcEe6zYM67bEMK/Mj7vz9m9p5VPWizMjuFZnygbmt7jYAvd6TrPUKifxImGVunKGNg==
+  dependencies:
+    "@hapi/joi" "17.1.1"
+    "@tarojs/helper" "3.3.16"
+    "@tarojs/shared" "3.3.16"
+    "@tarojs/taro" "3.3.16"
+    fs-extra "8.1.0"
+    lodash "4.17.21"
+    resolve "1.15.1"
+    tapable "1.1.3"
+
 "@tarojs/shared@3.3.10":
   version "3.3.10"
   resolved "https://registry.yarnpkg.com/@tarojs/shared/-/shared-3.3.10.tgz#68075a2abb754f936f703466508ecae5e22ebf2b"
   integrity sha512-PPIgkDEGXl7SNsN2XmN8ykbS1VgN0O+D1+W1RDbeWMXdRuuLXMc/jyhTWuxLV01ebaJr6e2pGeo6PC2Ce8lKeA==
+
+"@tarojs/shared@3.3.16":
+  version "3.3.16"
+  resolved "https://registry.yarnpkg.com/@tarojs/shared/-/shared-3.3.16.tgz#62312400ea5104a38df9af2c5244b68401968695"
+  integrity sha512-+EgJCmigHjlvsZN9GQEn8suYumrUwMmsIc8tqqfN8xVsv0E1/JTLtUxnv8x++bTzSbAwB1BS+B3lDWfozrl2xg==
 
 "@tarojs/taro-h5@3.3.10":
   version "3.3.10"
@@ -2718,6 +2791,20 @@
     "@tarojs/api" "3.3.10"
     "@tarojs/router" "3.3.10"
     "@tarojs/runtime" "3.3.10"
+    base64-js "^1.3.0"
+    jsonp-retry "^1.0.3"
+    mobile-detect "^1.4.2"
+    raf "^3.4.1"
+    whatwg-fetch "^3.4.0"
+
+"@tarojs/taro-h5@3.3.16":
+  version "3.3.16"
+  resolved "https://registry.yarnpkg.com/@tarojs/taro-h5/-/taro-h5-3.3.16.tgz#5156d648362b2b94c7292fedbdb4805b9d8c8f04"
+  integrity sha512-e83waS99XNhU10Q4mLqtbK5Edt2Bdd2U9O9o9+IHGaXwkRIk/Z1QQU43tMH6kCntDRzNFKYYIeJKpULSPezMwQ==
+  dependencies:
+    "@tarojs/api" "3.3.16"
+    "@tarojs/router" "3.3.16"
+    "@tarojs/runtime" "3.3.16"
     base64-js "^1.3.0"
     jsonp-retry "^1.0.3"
     mobile-detect "^1.4.2"
@@ -2742,6 +2829,15 @@
     "@tarojs/api" "3.3.10"
     "@tarojs/runtime" "3.3.10"
     "@tarojs/taro-h5" "3.3.10"
+
+"@tarojs/taro@3.3.16":
+  version "3.3.16"
+  resolved "https://registry.yarnpkg.com/@tarojs/taro/-/taro-3.3.16.tgz#9b89d9f878073f14590252d43fafcc9e3367397f"
+  integrity sha512-jKeS/YHNRX3hEjgb8Qdb8w1iVs3i2BG7DRDfxHogy2uefv3I18SnciBAVjrwrfDgBkpBLO2qlHXGOVSQgcMK3g==
+  dependencies:
+    "@tarojs/api" "3.3.16"
+    "@tarojs/runtime" "3.3.16"
+    "@tarojs/taro-h5" "3.3.16"
 
 "@tarojs/webpack-runner@3.3.10":
   version "3.3.10"
@@ -7958,7 +8054,7 @@ highcharts@^9.2.2:
   resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-9.3.2.tgz#20b34f7277169a48d7b5691f74705e8addc78cd3"
   integrity sha512-I/48gNMvs3hZxZnPRUqLbnlrGZJJ7YPPVr1+fYeZ35p4pSZAOwTmAGbptrjBr7JlF52HmJH9zMbt/I4TPLu9Pg==
 
-history@^5.0.0:
+history@^5.0.0, history@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/history/-/history-5.1.0.tgz#2e93c09c064194d38d52ed62afd0afc9d9b01ece"
   integrity sha512-zPuQgPacm2vH2xdORvGGz1wQMuHSIB56yNAy5FnLuwOwgSYyPKptJtcMm6Ev+hRGeS+GzhbmRacHzvlESbFwDg==

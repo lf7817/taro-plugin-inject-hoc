@@ -22,6 +22,7 @@ const config = {
     }
   },
   framework: 'react',
+  plugins: ['taro-plugin-inject-template'],
   mini: {
     postcss: {
       pxtransform: {
