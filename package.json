@@ -4,7 +4,9 @@
     "packages/*"
   ],
   "scripts": {
-    "start:demo": "cd packages/taro-example && npm run dev:weapp"
+    "start:demo": "cd packages/taro-example && npm run dev:weapp",
+    "start:hoc": "cd packages/taro-plugin-inject-hoc && npm run start",
+    "pub": "lerna publish"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
