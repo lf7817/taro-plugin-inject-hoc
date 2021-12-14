@@ -1,0 +1,79 @@
+{
+  "version": "0.1.4",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [
+    "taro",
+    "hoc",
+    "loader",
+    "react",
+    "inject-hoc"
+  ],
+  "homepage": "https://github.com/lf7817/taro-plugin-inject-hoc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lf7817/taro-plugin-inject-hoc.git"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "typescript": "*",
+    "webpack": "^4.0.0 || ^5.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "taro-plugin-inject-hoc",
+  "author": "lf7817",
+  "module": "dist/taro-plugin-inject-hoc.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/taro-plugin-inject-hoc.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/taro-plugin-inject-hoc.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@babel/generator": "^7.15.8",
+    "@babel/parser": "^7.15.8",
+    "@babel/traverse": "^7.15.4",
+    "@babel/types": "^7.15.6",
+    "@size-limit/preset-small-lib": "^6.0.3",
+    "@types/babel__generator": "^7.6.3",
+    "@types/babel__traverse": "^7.14.2",
+    "@types/loader-utils": "^2.0.3",
+    "husky": "^7.0.4",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "loader-utils": "^2.0.0",
+    "schema-utils": "^3.1.1"
+  }
+}
