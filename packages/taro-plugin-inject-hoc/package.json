@@ -16,7 +16,7 @@
     "react",
     "inject-hoc"
   ],
-  "homepage": "https://github.com/lf7817/taro-plugin-inject-hoc",
+  "homepage": "https://github.com/lf7817/taro-plugin-inject-hoc/tree/main/packages/taro-plugin-inject-hoc",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lf7817/taro-plugin-inject-hoc.git"
