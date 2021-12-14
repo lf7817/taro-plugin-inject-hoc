@@ -8,7 +8,7 @@ import { LoaderOptions } from './types';
 import * as utils from './utils';
 import generate from '@babel/generator';
 
-const PACKAGE_NAME = 'taro-plugin-inject-hoc';
+const PACKAGE_NAME = 'taro-inject-hoc-loader';
 
 export default function injectHocLoader(source: string) {
   // @ts-ignore

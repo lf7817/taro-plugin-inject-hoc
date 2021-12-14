@@ -52,8 +52,6 @@ export function getNeedInjectHocByAst(ast: any, hocList: HocBase[]) {
   return needInjectHocList;
 }
 
-console.log('test');
-
 export function generateCallExpression(
   needInjectHocList: HocBase[] = [],
   params: any[]

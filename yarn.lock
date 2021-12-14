@@ -14482,6 +14482,14 @@ taro-css-to-react-native@3.3.10:
     css-mediaquery "^0.1.2"
     postcss-value-parser "^3.3.0"
 
+taro-plugin-inject-hoc@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/taro-plugin-inject-hoc/-/taro-plugin-inject-hoc-0.1.6.tgz#c9e3db215cac722f674d7271b276351c8ac4535c"
+  integrity sha512-gwHQhcuEVJkTjOiIEE0hb1NEIn7LRc6aK8u8r7hAMj/D+8f/b3urGjVlVjK1EgAP1WtUagLv1wmpqhbem1fYjg==
+  dependencies:
+    loader-utils "^2.0.0"
+    schema-utils "^3.1.1"
+
 temp-dir@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/temp-dir/-/temp-dir-1.0.0.tgz#0a7c0ea26d3a39afa7e0ebea9c1fc0bc4daa011d"

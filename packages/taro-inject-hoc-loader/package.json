@@ -45,16 +45,16 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "taro-plugin-inject-hoc",
+  "name": "taro-inject-hoc-loader",
   "author": "lf7817",
-  "module": "dist/taro-plugin-inject-hoc.esm.js",
+  "module": "dist/taro-inject-hoc-loader.esm.js",
   "size-limit": [
     {
-      "path": "dist/taro-plugin-inject-hoc.cjs.production.min.js",
+      "path": "dist/taro-inject-hoc-loader.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/taro-plugin-inject-hoc.esm.js",
+      "path": "dist/taro-inject-hoc-loader.esm.js",
       "limit": "10 KB"
     }
   ],
