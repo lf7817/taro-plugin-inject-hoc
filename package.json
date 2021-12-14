@@ -5,7 +5,8 @@
   ],
   "scripts": {
     "start:demo": "cd packages/taro-example && npm run dev:weapp",
-    "start:hoc": "cd packages/taro-plugin-inject-hoc && npm run start",
+    "start:hoc": "cd packages/taro-inject-hoc-loader && npm run start",
+    "start:template": "cd packages/taro-plugin-inject-template && npm run start",
     "pub": "lerna publish"
   },
   "devDependencies": {
