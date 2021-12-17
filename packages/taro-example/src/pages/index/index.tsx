@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { View, Text, Button } from '@tarojs/components';
 import { navigateTo } from '@tarojs/taro';
+import './index.css';
 
 export default class Index extends Component {
   componentWillMount() {}

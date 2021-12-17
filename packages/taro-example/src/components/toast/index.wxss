@@ -1,0 +1,36 @@
+.my-toast {
+  position: fixed;
+  bottom: 160px;
+  left: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 300px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  background-color: #000;
+  border-radius: 100px;
+  transform: translateX(-50%);
+  opacity: 0.7;
+}
+
+.my-toast__hidden {
+  display: none;
+}
+
+.my-toast .my-toast__icon {
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.my-toast .my-toast__text {
+  width: max-content;
+  overflow: hidden;
+  font-weight: 600;
+}

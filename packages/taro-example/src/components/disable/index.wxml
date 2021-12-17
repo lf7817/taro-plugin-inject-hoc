@@ -1,0 +1,8 @@
+<template name="disable">
+  <view class="guide-disable {{__disable__.visible ? '' : 'guide-disable__hidden'}}">
+    <view class="guide-disable__content">
+      <image class="guide-disable__image" src="http://img.1000.com/shumou/mp/no-auth.png" />
+      <view class="guide-disable__text">导购功能当前不可用</view>
+    </view>
+  </view>
+</template>

@@ -9,6 +9,12 @@ export default {
     'pages/demo5/index',
     'pages/demo6/index',
   ],
+  subpackages: [
+    {
+      root: 'packages/test',
+      pages: ['pages/demo/index'],
+    },
+  ],
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',

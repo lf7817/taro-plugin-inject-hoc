@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import './global.css';
 
 class App extends Component {
   componentDidMount() {}
