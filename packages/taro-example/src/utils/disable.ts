@@ -1,20 +1,14 @@
 import { getCurrentPages, PageInstance } from '@tarojs/taro';
 
-interface ToastShowConfig {
-  title: string;
-  icon?: string;
-  duration?: number;
-}
-
 type IPage = PageInstance & { setData: (data: Record<string, any>) => void };
 
-class Toast {
-  private static instance: Toast;
+class Disable {
+  private static instance: Disable;
   private constructor() {}
 
-  public static getInstance(): Toast {
+  public static getInstance(): Disable {
     if (!this.instance) {
-      this.instance = new Toast();
+      this.instance = new Disable();
     }
 
     return this.instance;
@@ -26,15 +20,13 @@ class Toast {
     return (curPage as any) as IPage;
   };
 
-  public show(config: ToastShowConfig) {
-    const { title, icon = '', duration = 2000 } = config;
+  public show() {
     const currentPage = this.getCurrentPage();
 
     if (!currentPage) {
       return;
     }
-    currentPage.setData({ __toast__: { title, visible: true, icon } });
-    setTimeout(() => this.hide(), duration);
+    currentPage.setData({ __disable__: { visible: true } });
   }
 
   public hide() {
@@ -44,8 +36,8 @@ class Toast {
       return;
     }
 
-    currentPage.setData({ __toast__: { visible: false, title: '', icon: '' } });
+    currentPage.setData({ __disable__: { visible: false } });
   }
 }
 
-export default Toast.getInstance();
+export default Disable.getInstance();

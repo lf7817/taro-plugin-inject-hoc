@@ -41,7 +41,8 @@
 		"@tarojs/runtime": "3.3.17",
 		"@tarojs/taro": "3.3.17",
 		"react": "^17.0.0",
-		"react-dom": "^17.0.0"
+		"react-dom": "^17.0.0",
+		"react-hooks-global-state": "^1.0.2"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.8.0",
