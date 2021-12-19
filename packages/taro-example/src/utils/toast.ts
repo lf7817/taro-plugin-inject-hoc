@@ -9,14 +9,23 @@ interface ToastShowConfig {
 type Page = PageInstance & { setData: (data: Record<string, any>) => void };
 
 class Toast {
+  private static instance: Toast;
   private constructor() {}
 
-  private static getCurrentPage = () => {
+  public static getInstance(): Toast {
+    if (!this.instance) {
+      this.instance = new Toast();
+    }
+
+    return this.instance;
+  }
+
+  private getCurrentPage = () => {
     const { page } = getCurrentInstance();
     return page as Page;
   };
 
-  public static show(config: ToastShowConfig) {
+  public show(config: ToastShowConfig) {
     const { title, icon = '', duration = 2000 } = config;
     const currentPage = this.getCurrentPage();
 
@@ -27,7 +36,7 @@ class Toast {
     setTimeout(() => this.hide(), duration);
   }
 
-  public static hide() {
+  public hide() {
     const currentPage = this.getCurrentPage();
 
     if (!currentPage) {
@@ -38,4 +47,4 @@ class Toast {
   }
 }
 
-export default Toast;
+export default Toast.getInstance();
