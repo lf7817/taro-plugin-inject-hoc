@@ -8,6 +8,7 @@ export default {
     'pages/demo4/index',
     'pages/demo5/index',
     'pages/demo6/index',
+    'pages/toast/index',
   ],
   subpackages: [
     {

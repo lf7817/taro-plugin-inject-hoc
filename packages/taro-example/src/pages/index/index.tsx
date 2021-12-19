@@ -17,6 +17,9 @@ export default class Index extends Component {
   render() {
     return (
       <View className="index">
+        <View style={{ textAlign: 'center', fontWeight: 'bold', margin: '40rpx 0' }}>
+          taro-inject-hoc-loader
+        </View>
         <View style={{ textAlign: 'center', fontWeight: 'bold', margin: '40rpx 0' }}>支持情况</View>
         <Button onClick={() => navigateTo({ url: '/pages/demo/index' })}>
           默认导出唯一标识符情况
@@ -38,6 +41,11 @@ export default class Index extends Component {
         <Button onClick={() => navigateTo({ url: '/pages/demo6/index' })}>
           useDidShow不触发情况
         </Button>
+
+        <View style={{ textAlign: 'center', fontWeight: 'bold', margin: '40rpx 0' }}>
+          taro-plugin-inject-template
+        </View>
+        <Button onClick={() => navigateTo({ url: '/pages/toast/index' })}>自定义toast</Button>
       </View>
     );
   }
