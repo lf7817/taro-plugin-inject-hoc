@@ -18,6 +18,12 @@ export default class Index extends Component {
     return (
       <View className="index">
         <View style={{ textAlign: 'center', fontWeight: 'bold', margin: '40rpx 0' }}>
+          taro-plugin-inject-template
+        </View>
+        <Button onClick={() => navigateTo({ url: '/pages/toast/index' })}>toast</Button>
+        <Button onClick={() => navigateTo({ url: '/pages/disable/index' })}>disable</Button>
+
+        <View style={{ textAlign: 'center', fontWeight: 'bold', margin: '40rpx 0' }}>
           taro-inject-hoc-loader
         </View>
         <View style={{ textAlign: 'center', fontWeight: 'bold', margin: '40rpx 0' }}>支持情况</View>
@@ -41,11 +47,6 @@ export default class Index extends Component {
         <Button onClick={() => navigateTo({ url: '/pages/demo6/index' })}>
           useDidShow不触发情况
         </Button>
-
-        <View style={{ textAlign: 'center', fontWeight: 'bold', margin: '40rpx 0' }}>
-          taro-plugin-inject-template
-        </View>
-        <Button onClick={() => navigateTo({ url: '/pages/toast/index' })}>自定义toast</Button>
       </View>
     );
   }

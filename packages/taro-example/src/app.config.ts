@@ -9,6 +9,7 @@ export default {
     'pages/demo5/index',
     'pages/demo6/index',
     'pages/toast/index',
+    'pages/disable/index',
   ],
   subpackages: [
     {
