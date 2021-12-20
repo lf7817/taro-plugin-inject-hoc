@@ -12,6 +12,9 @@
 
 ![演示](https://fan-1257622445.cos.ap-nanjing.myqcloud.com/2021/12/19/arccv2dzc6.gif)
 
+![iShot2021-12-20 17.00.50](https://fan-1257622445.cos.ap-nanjing.myqcloud.com/2021/12/20/ishot20211220-170050.gif)
+
+
 ## 方式一：混合开发方式
 
 > [参考文档](https://github.com/lawler61/blog/blob/master/js/taro-mini/index.md)
