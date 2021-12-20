@@ -52,9 +52,9 @@ base.wxml
 
 ```xml
 <template name="toast">
-  <view class="toast{{__toast__.visible ? '' : ' hidden'}}">
-    <image class="toast-icon{{__toast__.icon !== 'none' ? '' : ' hidden'}}" src="{{__toast__.icon}}"></image>
-    <view class="toast-text">{{__toast__.title}}</view>
+  <view class="my-toast {{__toast__.visible ? '' : 'my-toast__hidden'}}">
+    <image class="my-toast__icon {{__toast__.icon !== 'none' ? '' : 'my-toast__hidden'}}" src="{{__toast__.icon}}"></image>
+    <view class="my-toast__text">{{__toast__.title}}</view>
   </view>
 </template>
 ```
