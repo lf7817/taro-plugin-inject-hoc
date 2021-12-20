@@ -9,9 +9,6 @@
 - 实现自定义的toast（采用api的方式调用）
 - 实现全局的、有状态的遮罩
 
-
-![演示](https://fan-1257622445.cos.ap-nanjing.myqcloud.com/2021/12/19/arccv2dzc6.gif)
-
 ![iShot2021-12-20 17.00.50](https://fan-1257622445.cos.ap-nanjing.myqcloud.com/2021/12/20/ishot20211220-170050.gif)
 
 
