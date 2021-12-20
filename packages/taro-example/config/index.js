@@ -64,18 +64,18 @@ const config = {
                       {
                         name: 'hocA',
                         path: '@/hoc/hocA',
-                        isInject: filePath => /pages\/[0-9A-Za-z_-]+\/index\.tsx$/.test(filePath),
+                        isInject: filePath => /pages\/test\/index\.tsx$/.test(filePath),
                       },
-                      {
-                        name: 'hocB',
-                        path: '@/hoc/hocB',
-                        isInject: filePath => /pages\/[0-9A-Za-z_-]+\/index\.tsx$/.test(filePath),
-                      },
-                      {
-                        name: 'hocC',
-                        path: '@/hoc/hocC',
-                        isInject: filePath => /pages\/[0-9A-Za-z_-]+\/index\.tsx$/.test(filePath),
-                      },
+                      // {
+                      //   name: 'hocB',
+                      //   path: '@/hoc/hocB',
+                      //   isInject: filePath => /pages\/[0-9A-Za-z_-]+\/index\.tsx$/.test(filePath),
+                      // },
+                      // {
+                      //   name: 'hocC',
+                      //   path: '@/hoc/hocC',
+                      //   isInject: filePath => /pages\/[0-9A-Za-z_-]+\/index\.tsx$/.test(filePath),
+                      // },
                     ],
                   },
                 },

@@ -10,6 +10,7 @@ export default {
     'pages/demo6/index',
     'pages/toast/index',
     'pages/disable/index',
+    'pages/test/index',
   ],
   subpackages: [
     {
