@@ -4,6 +4,12 @@
 
 众所周知，小程序中不能定义全局组件，只能在每个页面手动引入，随着项目越来越大，这种方式无疑是繁琐和低效的，还有可能会忘记，所以今天我们来研究下通过工程化的方式自动注入。
 
+
+
+## 方式一：混合开发方式
+
+> [参考文档](https://github.com/lawler61/blog/blob/master/js/taro-mini/index.md)
+
 本次内容准备了两个demo
 
 - 实现自定义的toast（采用api的方式调用）
@@ -11,10 +17,6 @@
 
 ![iShot2021-12-20 17.00.50](https://fan-1257622445.cos.ap-nanjing.myqcloud.com/2021/12/20/ishot20211220-170050.gif)
 
-
-## 方式一：混合开发方式
-
-> [参考文档](https://github.com/lawler61/blog/blob/master/js/taro-mini/index.md)
 
 ### 编译后的页面
 
