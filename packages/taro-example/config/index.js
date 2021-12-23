@@ -66,6 +66,11 @@ const config = {
                         path: '@/hoc/hocA',
                         isInject: filePath => /pages\/test\/index\.tsx$/.test(filePath),
                       },
+                      {
+                        name: 'hocA',
+                        path: '@/hoc/hocA',
+                        isInject: filePath => /pages\/demo4\/index\.tsx$/.test(filePath),
+                      },
                       // {
                       //   name: 'hocB',
                       //   path: '@/hoc/hocB',
