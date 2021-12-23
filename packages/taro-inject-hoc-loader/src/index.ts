@@ -23,6 +23,9 @@ export default function injectHocLoader(source: string) {
   validate(schema as Schema, loaderOptions, { name: PACKAGE_NAME });
   /** 根据loader options筛选出需要注入的高阶组件 */
   const hocList = utils.getNeedInjectHocByOptions(loaderOptions, filePath);
+  if (hocList.length === 0) {
+    return source;
+  }
   /** 生成语法树 */
   const ast = utils.parseAstTree(source);
   /** 根据语法树筛选出实际需要注入的hoc */
@@ -104,7 +107,8 @@ export default function injectHocLoader(source: string) {
               types.classExpression(
                 path.node.declaration.id,
                 path.node.declaration.superClass,
-                path.node.declaration.body
+                path.node.declaration.body,
+                path.node.declaration.decorators
               ),
             ]);
             break;

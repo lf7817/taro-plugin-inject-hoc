@@ -1,15 +1,13 @@
 import { View } from '@tarojs/components';
 import { ComponentType, useEffect, useState } from 'react';
 
-export default function isLogin<T extends Record<string, any>>(
-  Comp: ComponentType<T>
-) {
+export default function isLogin<T extends Record<string, any>>(Comp: ComponentType<T>) {
   return function(props) {
     const [isInitiated, setInitiated] = useState(false);
     useEffect(() => {
       setTimeout(() => {
         setInitiated(true);
-      }, 2000);
+      }, 100);
     }, []);
 
     if (!isInitiated) {

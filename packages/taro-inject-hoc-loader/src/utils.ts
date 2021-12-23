@@ -26,7 +26,7 @@ export function getNeedInjectHocByOptions(
 export function parseAstTree(source: string) {
   return parse(source, {
     sourceType: 'module',
-    plugins: ['jsx', 'typescript', 'classProperties'],
+    plugins: ['jsx', 'typescript', 'classProperties', 'decorators-legacy'],
   });
 }
 
