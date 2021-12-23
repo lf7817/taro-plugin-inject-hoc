@@ -18,7 +18,7 @@ export default function injectHocLoader(source: string) {
   /** 获取loader options */
   const loaderOptions = (loaderUtils.getOptions(
     loaderContext
-  ) as unknown) as LoaderOptions;
+  ) as any) as LoaderOptions;
   // 校验loader options
   validate(schema as Schema, loaderOptions, { name: PACKAGE_NAME });
   /** 根据loader options筛选出需要注入的高阶组件 */
