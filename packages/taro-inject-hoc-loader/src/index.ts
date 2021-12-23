@@ -77,12 +77,29 @@ export default function injectHocLoader(source: string) {
             /**
              * 处理export default isInit(Demo) 情况
              */
-            callExpression = utils.generateCallExpression(needInjectHocList, [
-              types.callExpression(
-                types.identifier((path.node.declaration.callee as any).name),
+            let args: types.CallExpression | undefined = undefined;
+            if (path.node.declaration.callee.type === 'Identifier') {
+              args = types.callExpression(
+                types.identifier(path.node.declaration.callee.name),
                 path.node.declaration.arguments
-              ),
-            ]);
+              );
+            } else if (path.node.declaration.type === 'CallExpression') {
+              if (
+                path.node.declaration.callee.type === 'CallExpression' &&
+                path.node.declaration.callee.callee.type === 'Identifier'
+              ) {
+                args = types.callExpression(
+                  types.identifier(path.node.declaration.callee.callee.name),
+                  path.node.declaration.callee.arguments
+                );
+              }
+            }
+
+            if (args) {
+              callExpression = utils.generateCallExpression(needInjectHocList, [
+                types.callExpression(args, path.node.declaration.arguments),
+              ]);
+            }
             // TODO 修复某些情况下插入顺序错误的bug
             break;
           }
